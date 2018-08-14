@@ -1,0 +1,10 @@
+<h1>Details</h1>
+<h3><%= @task.title %></h3>
+<p><%= @task.details %></p>
+<% if @task.completed == true %>
+  <p style="color: green;"><i class="fas fa-thumbs-up"></i></p>
+<% else %>
+  <p style="color: red;"><i class="fas fa-thumbs-down"></i></p>
+<% end %>
+
+<%= link_to "Tasks", tasks_path %>
